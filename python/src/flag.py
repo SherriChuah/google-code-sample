@@ -16,9 +16,13 @@ class Flagged:
 			self._flag_videos[video_id] = reason
 			return True
 
-	def find_flag_video(self, video_id):
+	def is_flag_video(self, video_id):
 		if video_id in self._flag_videos:
 			return True
 		else:
 			return False
+
+	def remove_flag(self, video_id):
+		self._flag_videos.pop(video_id)
+		return True
 
