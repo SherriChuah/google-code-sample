@@ -1,4 +1,6 @@
 """A youtube terminal simulator."""
+"""Mostly Completed by Sherri Chuah"""
+
 from .video_player import VideoPlayer
 from .command_parser import CommandException
 from .command_parser import CommandParser
